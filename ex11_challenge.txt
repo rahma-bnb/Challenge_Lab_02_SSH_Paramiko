@@ -1,0 +1,19 @@
+Exercice 11 — Détection côté défenseur
+
+1) fail2ban :
+fail2ban surveille les fichiers de logs comme /var/log/auth.log
+et bloque automatiquement une adresse IP après plusieurs échecs.
+
+Même avec du jitter, fail2ban reste efficace car il analyse les
+tentatives dans une fenêtre de temps.
+
+2) Authentification à deux facteurs (2FA) :
+Même si le mot de passe est correct, un second facteur est requis.
+Le brute force devient inutile.
+
+3) Désactivation de l’authentification par mot de passe :
+Seules les clés SSH sont autorisées, empêchant toute attaque par
+brute force basée sur les mots de passe.
+
+Le jitter peut ralentir les tentatives mais ne contourne pas
+ces mécanismes de défense.
